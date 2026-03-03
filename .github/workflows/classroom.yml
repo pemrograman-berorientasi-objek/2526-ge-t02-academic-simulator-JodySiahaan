@@ -312,14 +312,14 @@ jobs:
         setup-command: make compile
         command: make -s test_03
         input: |
-          enrollment-add#12S1102#12S20050#2021/2022#odd
-          enrollment-add#12S3101#12S20022#2021/2022#odd
-          enrollment-add#KUS4101#12S20053#2020/2021#odd
+          12S1102#12S20050#2021/2022#odd
+          12S3101#12S20022#2021/2022#odd
+          KUS4101#12S20053#2020/2021#odd
           ---
         expected-output: |
-          enrollment-add|12S1102|12S20050|2021/2022|None
-          enrollment-add|12S3101|12S20022|2021/2022|None
-          enrollment-add|KUS4101|12S20053|2020/2021|None
+          12S1102|12S20050|2021/2022|odd|None
+          12S3101|12S20022|2021/2022|odd|None
+          KUS4101|12S20053|2020/2021|odd|None
         comparison-method: exact
         timeout: 1
         max-score: 10
